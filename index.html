@@ -13,7 +13,7 @@
             <li><span class="nav-brand">🍽️ Local Food Finder</span></li>
             <li style="margin-left: 760px;"><a href="index.html">Home</a></li>
             <li><a href="foods.html">Foods</a></li>
-            <li><a href="categories.html">Categories</a></li>
+            <li><a href="foodbyarea.html">Food By Area</a></li>
             <li><a href="details.html">Restaurant Details</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
@@ -36,8 +36,8 @@
             </p>
 
             <div class="search-bar">
-                <input type="text" placeholder="Search food or area... e.g. Biryani, Saddar">
-                <button type="button">Search</button>
+                <input type="text" id="homeSearch" placeholder="Search food or area... e.g. Biryani, Saddar">
+                <button type="button" onclick="redirectSearch()">Search</button>
             </div>
         </div>
 
@@ -75,6 +75,6 @@
     <footer>
         <p>&copy; 2026 Local Food Finder &mdash; A Student Semester Project | Rawalpindi &amp; Islamabad</p>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

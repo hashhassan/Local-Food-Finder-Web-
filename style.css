@@ -11,6 +11,9 @@ body {
     color: #2e2e2e;
     font-size: 16px;
     line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -58,6 +61,7 @@ nav ul li a:hover {
     text-decoration: none;
 }
 
+
 .nav-brand {
     font-size: 22px;
     font-weight: bold;
@@ -92,6 +96,35 @@ main {
     max-width: 1000px;
     margin: 30px auto;
     padding: 0 20px;
+    flex: 1;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.filter-btn {
+    padding: 8px 18px;
+    border: 2px solid #c0392b;
+    background-color: #fff;
+    color: #c0392b;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+}
+
+.filter-btn:hover {
+    background-color: #c0392b;
+    color: #fff;
+}
+
+.filter-btn.active {
+    background-color: #c0392b;
+    color: #fff;
 }
 
 .btn {
@@ -150,12 +183,13 @@ main {
     justify-content: center;
     gap: 10px;
     margin-top: 15px;
+    margin-bottom: 20px;
     flex-wrap: wrap;
 }
 
 .search-bar input {
     padding: 10px 15px;
-    width: 300px;
+    width: 200px;
     border: 2px solid #c0392b;
     border-radius: 4px;
     font-size: 14px;
